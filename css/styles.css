@@ -239,7 +239,7 @@ img {
 .projects__title,
 .team__title,
 .clients__title,
-.section-title {
+.portfolio__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -253,12 +253,12 @@ img {
 .team__list
 .footer__list,
 .footer__contacts,
-.portfolio-list,
-.portfolio-menu {
+.portfolio__list,
+.portfolio__menu {
   list-style: none;
 }
 .features__title,
-.portfolio-title {
+.portfolio__title {
   visibility: hidden;
   height: 0px;
 }
@@ -637,17 +637,19 @@ img {
 
 /* Portfolio page */
 
+/* Portfolio list btn */
+
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.portfolio-list {
+.portfolio__list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.portfolio-btn > [type="button"] {
+.portfolio__btn {
   padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -665,15 +667,14 @@ img {
   transition: background-color var(--animation-function),
     color var(--animation-function), box-shadow var(--animation-function);
 }
-.portfolio-btn {
+.portfolio__item {
   margin-right: 8px;
 }
-.portfolio-btn:nth-last-child(1) {
+.portfolio__item:nth-last-child(1) {
   margin-right: 0px;
 }
-
-.portfolio [type="button"]:hover,
-.portfolio [type="button"]:focus,
+.portfolio__btn:hover,
+.portfolio__btn:focus,
 .portfolio .current-btn {
   cursor: pointer;
   color: var(--primary-dark-text);
@@ -685,47 +686,47 @@ img {
   color: var(--primary-dark-text);
   background-color: #2196f3;
 }
-.portfolio-subtitle {
+
+/* Portfolio menu */
+
+.portfolio__subtitle {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-light-text);
 }
-.portfolio-filter-section {
+.portfolio__filter {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-light-text);
 }
-.portfolio-link {
+.portfolio__link {
   text-decoration: none;
 }
-
-.portfolio-menu {
+.portfolio__menu {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
 }
-.portfolio-it {
+.portfolio__it {
   width: 370px;
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
 }
-.portfolio-it:nth-child(3n) {
+.portfolio__it:nth-child(3n) {
   margin-right: 0;
 }
-.portfolio-it:nth-last-child(-n + 3) {
+.portfolio__it:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-
-.portfolio-it-thumb {
+.portfolio__thumb {
   position: relative;
   overflow: hidden;
 }
-
-.portfolio-it-dscr {
+.portfolio__dscr {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -745,29 +746,27 @@ img {
   transform: translateY(100%);
   transition: transform var(--animation-function);
 }
-
-.portfolio-link:hover .portfolio-it-dscr {
+.portfolio__link:hover .portfolio__dscr {
   transform: translateY(0);
 }
-
-.card-dscr {
+.portfolio__card {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-.portfolio-subtitle {
+.portfolio__subtitle {
   margin-bottom: 4px;
 }
-.portfolio-link {
+.portfolio__link {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0), 0px 4px 4px rgba(0, 0, 0, 0),
     1px 4px 6px rgba(0, 0, 0, 0);
 
   transition: box-shadow var(--animation-function);
 }
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -889,7 +888,7 @@ img {
   margin-bottom: 20px;
 }
 
-.modal-form-btn {
+.modal__formbtn {
   display: inline-block;
   align-items: center;
   margin-left: auto;
@@ -908,8 +907,8 @@ img {
 
   transition: background-color var(--animation-function);
 }
-.modal-form-btn:focus,
-.modal-form-btn:hover {
+.modal__formbtn:focus,
+.modal__formbtn:hover {
   background-color: #188ce8;
   cursor: pointer;
 }
@@ -933,7 +932,7 @@ img {
   fill: var(--akcent-color-text);
 }
 
-.modal__item.checkbox {
+.checkbox {
   position: relative;
   flex-direction: row;
   justify-content: center;
@@ -942,30 +941,30 @@ img {
   margin-bottom: 30px;
   padding: 0;
 }
-.checkbox label {
+.checkbox__label {
   padding-left: 23px;
   line-height: 1.71;
   color: #757575;
 
 }
-.icon-check {
+.icon__check {
   position: absolute;
   top: 50%;
   left: 8px;
   transform: translateY(-50%);
   opacity: 1;
 }
-.icon-checkbox {
+.checkbox__icon {
   position: absolute;
   top: 50%;
   left: 8px;
   transform: translateY(-50%);
   opacity: 0;
 }
-.checkbox-input:checked ~  .icon-check {
+.checkbox__input:checked ~  .icon__check {
   opacity: 0;
 }
-.checkbox-input:checked ~ .icon-checkbox {
+.checkbox__input:checked ~ .checkbox__icon {
   opacity: 1;
 }
 
