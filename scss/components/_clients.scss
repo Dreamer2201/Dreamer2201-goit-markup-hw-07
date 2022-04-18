@@ -13,9 +13,9 @@
     justify-content: center;
     align-items: center;
     margin-right: 30px;
-}
-.clients__it:nth-last-child(1) {
-    margin-right: 0px;
+    &:nth-last-child(1) {
+        margin-right: 0px;
+    }
 }
 .clients__link {
     display: flex;
@@ -26,14 +26,15 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: border-color var(--animation-function);
+    &:hover {
+        border-color: #2196f3;
+        & .clients__logo {
+            fill: var(--akcent-color-text);
+        }
+    }
 }
 .clients__logo {
     fill: #afb1b8;
     transition: fill var(--animation-function);
 }
-.clients__link:hover .clients__logo {
-    fill: var(--akcent-color-text);
-}
-.clients__link:hover {
-    border-color: #2196f3;
-}
+

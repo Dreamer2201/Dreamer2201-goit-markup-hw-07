@@ -39,9 +39,9 @@
     color: var(--primary-dark-text);
     background-color: var(--akcent-color-text);
     transition: background-color var(--animation-function);
-}
-.hero-btn:hover,
-.hero-btn:focus {
-    background-color: #188ce8;
-    cursor: pointer;
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+        cursor: pointer;
+    }
 }

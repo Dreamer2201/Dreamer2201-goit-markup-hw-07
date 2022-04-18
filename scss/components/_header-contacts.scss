@@ -16,6 +16,8 @@
 }
 .header__mail,
 .header__tel {
+    display: flex;
+    align-items: center;
     color: var(--secondary-light-text);
     transition: color var(--animation-function);
 }
@@ -34,14 +36,9 @@
     margin-right: 10px;
     fill: var(--secondary-light-text);
     transition: fill var(--animation-function);
-}
-.header__icon:hover,
-.header__icon:focus {
-    fill: var(--akcent-color-text);
-    cursor: pointer;
-}
-.header__mail,
-.header__tel {
-    display: flex;
-    align-items: center;
+    &:hover,
+    &:focus {
+        fill: var(--akcent-color-text);
+        cursor: pointer;
+    }
 }

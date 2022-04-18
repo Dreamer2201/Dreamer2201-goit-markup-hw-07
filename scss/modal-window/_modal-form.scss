@@ -23,11 +23,11 @@
     border-radius: 4px;
     padding-left: 42px;
     transition: border-color var(--animation-function);
-}
-.modal__input:focus,
-.modal__input:hover {
-    border: 1px solid #2196F3;
-    cursor: pointer;
+    &:focus,
+    &:hover {
+        border: 1px solid #2196F3;
+        cursor: pointer;
+    }
 }
 .modal__textarea {
     width: 100%;
@@ -37,11 +37,11 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--animation-function);
-}
-.modal__textarea:focus,
-.modal__textarea:hover {
-    border-color: var(--akcent-color-text);
-    cursor: pointer;
+    &:focus,
+    &:hover {
+        border-color: var(--akcent-color-text);
+        cursor: pointer;
+    }
 }
 .modal__comment {
     margin-bottom: 20px;
@@ -62,11 +62,11 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     transition: background-color var(--animation-function);
-}
-.modal__formbtn:focus,
-.modal__formbtn:hover {
-    background-color: #188ce8;
-    cursor: pointer;
+    &:focus,
+    &:hover {
+        background-color: #188ce8;
+        cursor: pointer;
+    }
 }
 .input__wrapper {
     position: relative;
@@ -77,8 +77,6 @@
     left: 15px;
     transform: translateY(50%);
     display: inline-block;
-}
-.modal__icon {
     fill: var(--primary-light-text);
 }
 .modal__input:focus+.modal__icon,

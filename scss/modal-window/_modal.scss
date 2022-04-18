@@ -38,11 +38,11 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--primary-dark-text);
     transition: fill var(--animation-function);
-}
-.modal__btn:focus,
-.modal__btn:hover {
-    cursor: pointer;
-    fill: var(--akcent-color-text);
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        fill: var(--akcent-color-text);
+    }
 }
 .backdrop.is-hidden {
     opacity: 0;

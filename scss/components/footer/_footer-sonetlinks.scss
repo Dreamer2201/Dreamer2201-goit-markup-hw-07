@@ -18,9 +18,9 @@
     display: flex;
     list-style: none;
     margin-right: 10px;
-}
-.footer__sonetit:nth-last-child(1) {
-    margin-right: 0px;
+    &:nth-last-child(1) {
+        margin-right: 0px;
+    }
 }
 .footer__sonetlink {
     display: flex;
@@ -31,13 +31,13 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color var(--animation-function);
+    &:hover {
+        background-color: var(--akcent-color-text);
+        & .footer__sonetsvg {
+            fill: var(--primary-dark-text);
+        }
+    }
 }
 .footer__sonetsvg {
-    fill: var(--primary-dark-text);
-}
-.footer__sonetlink:hover {
-    background-color: var(--akcent-color-text);
-}
-.footer__sonetlink:hover .footer__sonetsvg {
     fill: var(--primary-dark-text);
 }

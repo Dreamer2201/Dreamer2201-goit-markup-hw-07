@@ -25,14 +25,14 @@
     color: var(--primary-light-text);
 
     transition: color var(--animation-function);
-}
-.header__link:hover,
-.header__link:focus {
-    color: var(--akcent-color-text);
-    cursor: pointer;
-}
-.header__link--current {
-    color: var(--akcent-color-text);
+    &:hover,
+    &:focus {
+        color: var(--akcent-color-text);
+        cursor: pointer;
+    }
+    &--current {
+        color: var(--akcent-color-text);
+    }
 }
 .header__link--current::after {
     position: absolute;

@@ -9,9 +9,9 @@
 .sonetlinks__item {
     list-style: none;
     margin-right: 10px;
-}
-.sonetlinks__item:nth-last-child(1) {
-    margin-right: 0px;
+    &:nth-last-child(1) {
+        margin-right: 0px;
+    }
 }
 .team__link {
     display: flex;
@@ -22,6 +22,12 @@
     border-radius: 50%;
     background-color: #ffffff;
     transition: background-color var(--animation-function);
+    &:hover {
+        background-color: var(--akcent-color-text);
+        & .sonetlinks__icon {
+            fill: var(--primary-dark-text);
+        }
+    }
 }
 .sonetlinks__icon {
     fill: #afb1b8;
@@ -29,7 +35,4 @@
 }
 .team__link:hover .sonetlinks__icon {
     fill: var(--primary-dark-text);
-}
-.team__link:hover {
-    background-color: var(--akcent-color-text);
 }
